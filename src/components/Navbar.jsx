@@ -4,6 +4,14 @@ import { navItems } from '../data/portfolioData'
 function Navbar() {
   const [activeLink, setActiveLink] = useState('home')
 
+  const closeMobileMenu = (event) => {
+    const menu = event.currentTarget.closest('.navbar-collapse')
+
+    if (menu?.classList.contains('show')) {
+      menu.closest('.navbar')?.querySelector('.navbar-toggler')?.click()
+    }
+  }
+
   useEffect(() => {
     const sections = document.querySelectorAll('section[id]')
 
@@ -45,7 +53,11 @@ function Navbar() {
             <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-3">
               {navItems.map((item) => (
                 <li className="nav-item" key={item.id}>
-                  <a className={`nav-link ${activeLink === item.id ? 'active' : ''}`} href={`#${item.id}`}>
+                  <a
+                    className={`nav-link ${activeLink === item.id ? 'active' : ''}`}
+                    href={`#${item.id}`}
+                    onClick={closeMobileMenu}
+                  >
                     {item.label}
                   </a>
                 </li>

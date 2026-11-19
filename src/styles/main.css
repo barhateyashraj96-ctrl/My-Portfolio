@@ -685,6 +685,10 @@
     padding: 1.5rem 1rem;
   }
 
+  .contact-info-card p {
+    overflow-wrap: anywhere;
+  }
+
   .social-links {
     gap: 1rem;
   }
@@ -711,6 +715,10 @@
     padding-top: 4.5rem;
   }
 
+  .hero-section .row {
+    --bs-gutter-x: 1.5rem;
+  }
+
   .profile-card {
     margin-top: 1rem;
   }
@@ -718,7 +726,7 @@
 
 @media (max-width: 576px) {
   .section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .project-head {
@@ -727,10 +735,79 @@
   }
 
   .stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .stat-card {
+    min-height: 100px;
+    padding: 0.9rem 0.5rem;
+  }
+
+  .stat-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .stat-card span {
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+  }
+
+  .section-heading {
+    margin-bottom: 1.75rem;
+  }
+
+  .section-heading h3 {
+    font-size: clamp(1.7rem, 7vw, 2.1rem);
+  }
+
+  .profile-card,
+  .info-card,
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .journey-item {
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .journey-number {
+    flex: 0 0 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .journey-item p {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.25rem 1rem;
+    border-radius: 20px;
   }
 
   .site-footer .container {
     text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-brand {
+    font-size: 0.95rem;
+    letter-spacing: 0;
+  }
+
+  .hero-section {
+    padding-top: 3.5rem;
+  }
+
+  .hero-section .row {
+    --bs-gutter-y: 2rem;
+  }
+
+  .hero-actions .btn {
+    flex: 1 1 100%;
   }
 }
