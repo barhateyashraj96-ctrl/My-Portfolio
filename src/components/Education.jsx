@@ -6,7 +6,7 @@ function Education() {
       <div className="container">
         <div className="section-heading text-center">
           <p className="section-label">Education</p>
-          <h3>BCA 1st year journey and relevant learning.</h3>
+          <h3>BCA 2nd year journey and relevant learning.</h3>
         </div>
 
         <div className="row g-4 align-items-stretch">
@@ -14,7 +14,7 @@ function Education() {
             <div className="info-card h-100">
               <h4>Bachelor of Computer Applications (BCA)</h4>
               <p>
-                <strong>Year:</strong> 1st Year
+                <strong>Year:</strong> 2nd Year
               </p>
               <p>
                 <strong>College:</strong> University Of Mysore &amp; Technology

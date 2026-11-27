@@ -11,7 +11,7 @@ function About() {
           <div className="col-lg-6">
             <div className="info-card">
               <p>
-                I am a BCA 1st year student with a strong interest in web development and digital product creation.
+                I am a BCA 2nd year student with a strong interest in web development and digital product creation.
                 I enjoy understanding how websites work, how design impacts user experience, and how code turns ideas into usable experiences.
               </p>
               <p>

@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A clean, responsive portfolio website for a BCA 1st year student learning web development.
+A clean, responsive portfolio website for a BCA 2nd year student learning web development.
 
 ## Customize the content
 

@@ -1,8 +1,8 @@
 export const profile = {
   name: 'Yashraj Barhate',
   initials: 'YB',
-  title: 'BCA 1st Year Student & Aspiring Web Developer',
-  shortTitle: 'BCA 1st Year Student',
+  title: 'BCA 2nd Year Student & Aspiring Web Developer',
+  shortTitle: 'BCA 2nd Year Student',
   college: 'University Of Mysore & Technology',
   city: 'Maharashtra Sailu',
   email: 'barhateyashraj96@gmail.com',
